@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 6bb4253f9059802499532c94f2c97f55
-timeCreated: 1516999230
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -209,7 +207,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
