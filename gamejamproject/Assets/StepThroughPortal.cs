@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StepThroughPortal : MonoBehaviour {
+public abstract class StepThroughPortal : MonoBehaviour {
 
     public GameObject targetPortal;
 
-    protected virtual void _DoPortalAction(Collider player)
-    { }
+    protected abstract void _DoPortalAction(Collider player);
 
     // Use this for initialization
     void Start () {
