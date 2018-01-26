@@ -288,6 +288,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AnimateMyPlatform.cs" />
     <Compile Include="Assets\SimpleStepThroughPortal.cs" />
     <Compile Include="Assets\StepThroughPortal.cs" />
   </ItemGroup>
