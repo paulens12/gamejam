@@ -203,3 +203,4 @@ MonoBehaviour:
   typeToDuplicate: {fileID: 1872037050394064, guid: 83ea7bed26d7d3743afb3e9b5a06ec35,
     type: 2}
   cycleSpeed: 0.1
+  gap: 0.55

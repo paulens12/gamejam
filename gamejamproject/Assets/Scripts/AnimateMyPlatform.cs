@@ -9,6 +9,7 @@ public class AnimateMyPlatform : MonoBehaviour {
     public int numberOfPlatforms;
     public GameObject typeToDuplicate;
     public float cycleSpeed;
+    public float gap;
     private GameObject[] duplicates;
     private float distance = 0.5f;
     private int i = 0;
@@ -32,7 +33,7 @@ public class AnimateMyPlatform : MonoBehaviour {
             {
                 yield return new WaitForSeconds(1.0f);
             }
-            GameObject newCube = Instantiate(typeToDuplicate, new Vector3(startingCube.transform.position.x, startingCube.transform.position.y, startingCube.transform.position.z + 1 + i), Quaternion.identity);
+            GameObject newCube = Instantiate(typeToDuplicate, new Vector3(startingCube.transform.position.x, startingCube.transform.position.y, startingCube.transform.position.z + gap*i), Quaternion.identity);
             i++;
             yield return new WaitForSeconds(cycleSpeed);
         }
