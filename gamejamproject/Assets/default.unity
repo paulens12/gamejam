@@ -226,7 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c2605bb922814c4a89dff30d0f6f888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDistance: 20000
+  MaxGlowDistance: 2
+  MaxActivateDistance: 1
 --- !u!1001 &416939533
 Prefab:
   m_ObjectHideFlags: 0
@@ -956,7 +957,7 @@ Prefab:
         type: 2}
       propertyPath: second
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 474234743}
     - target: {fileID: 114503224427368300, guid: 97bf5e7e06602c44a8364358af681e7b,
         type: 2}
       propertyPath: maxValue
@@ -969,7 +970,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1349148017987274, guid: 97bf5e7e06602c44a8364358af681e7b, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 97bf5e7e06602c44a8364358af681e7b, type: 2}
