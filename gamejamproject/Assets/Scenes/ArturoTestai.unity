@@ -220,6 +220,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114710830612359408, guid: c8539133af76cc94e915de937f6ff0a8,
+        type: 2}
+      propertyPath: ladder
+      value: 0.18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8539133af76cc94e915de937f6ff0a8, type: 2}
   m_IsPrefabParent: 0

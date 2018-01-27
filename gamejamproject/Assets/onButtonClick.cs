@@ -16,9 +16,12 @@ public class onButtonClick : MonoBehaviour {
             Debug.Log("Click");
             RaycastHit hitInfo = new RaycastHit();
             bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo);
-            if (hitInfo.transform.gameObject.name == "Button1")
+            if (hit)//Reikia kad nemestu null point exception
             {
-                print("button 1 pressed");
+                if (hitInfo.transform.gameObject.name == "Button1")
+                {
+                    print("button 1 pressed");
+                }
             }
         }
     }
