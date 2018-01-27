@@ -8,6 +8,13 @@ public class Player : UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstP
 {
     private Dictionary<string, int> objectivesMap;
     public GameObject PortalCollectionObject;
+    public class Objectives
+    {
+        public const string Button1pressed = "Button1Pressed";
+        public const string KeyItem = "KeyItem";
+        public const string AxeItem = "AxeItem";
+        public const string ArtefactItem = "ArtefactItem";
+    }
 
     public Player()
     {
