@@ -13,9 +13,17 @@ public class SeeThroughPortal : StepThroughPortal
     // Use this for initialization
     void Start()
     {
-        Camera targetCamera = targetPortal.GetComponent<Camera>();
+        Camera newCamera = targetPortal.GetComponentInChildren<Camera>();
+        //newCamera.transform.parent = targetPortal.transform;
+        GameObject childCameraObject = new GameObject();
+        childCameraObject.transform.parent = targetPortal.transform;
+        //Camera newCamera = childCameraObject.AddComponent<Camera>();
         RenderTexture myTexture = new RenderTexture(256, 256, 24, RenderTextureFormat.ARGB32);
+        newCamera.targetTexture = myTexture;
         Material portalMaterial = new Material(new Material(Shader.Find("Standard")));
+        int albedoId = Shader.PropertyToID("Albedo");
+        portalMaterial.SetTexture(albedoId, myTexture);
+        portalMaterial.mainTexture = myTexture;
         Renderer myrenderer = GetComponent<Renderer>();
         myrenderer.material = portalMaterial;
     }
