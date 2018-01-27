@@ -43,6 +43,7 @@ public class AnimateMyPlatform : MonoBehaviour {
                 startingCube.transform.rotation);
             newCube.transform.parent = startingCube.transform.parent;
             newCube.transform.Translate(new Vector3(0, 0, gap * i));
+            newCube.transform.localScale = startingCube.transform.localScale;
             duplicates[i] = newCube;
             if (decay) StartCoroutine("Destroy", newCube);
             yield return new WaitForSeconds(cycleSpeed);
