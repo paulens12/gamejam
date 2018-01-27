@@ -2,6 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public abstract class TransformationStrategy
+{
+    private StepThroughPortal m_targetPortal;
+
+    public TransformationStrategy(StepThroughPortal targetPortal)
+    {
+        m_targetPortal = targetPortal;
+    }
+
+    public abstract void DoTransform(Player player);
+
+}
+
+
+
 public class SeeThroughPortal : StepThroughPortal
 {
 
@@ -39,8 +55,8 @@ public class SeeThroughPortal : StepThroughPortal
     public void OrientToDirection(Vector3 direction)
     {
         Camera camToOrient = targetPortal.GetComponentInChildren<Camera>();
-        targetPortal.transform.LookAt(targetPortal.transform.position + direction);
-        targetPortal.transform.Rotate(0, 0, 90);
+        camToOrient.transform.LookAt(targetPortal.transform.position + direction);
+        camToOrient.transform.Rotate(0, 0, 90);
         transform.LookAt(transform.position + direction);
         transform.Rotate(0, 90, 90);
         //camToOrient.transform.localRotation = localRot;
