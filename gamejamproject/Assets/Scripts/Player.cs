@@ -66,6 +66,10 @@ public class Player : UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstP
 
     public void addObjectiveInstance (string key)
     {
+        if (!hasObjectiveDone(key))
+        {
+            objectivesMap.Add(key, 0);
+        }
         objectivesMap[key] += 1;
     }
 }
