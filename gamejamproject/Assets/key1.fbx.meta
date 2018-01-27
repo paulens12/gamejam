@@ -1,51 +1,85 @@
 fileFormatVersion: 2
-guid: 7396a355b3d54114fa891d19e69dc6f9
-timeCreated: 1517062973
+guid: 21866e771223ca640abb67e594ce566e
+timeCreated: 1517072754
 licenseType: Pro
-SketchUpImporter:
-  generateBackFace: 0
-  mergeCoplanarFaces: 0
-  selectedNodes: 00000000010000000400000005000000
-  assetHash:
-    serializedVersion: 2
-    Hash: 3386691b6e38ac9c51ac554a908d34b2
-  longitude: -105.242139
-  latitude: 40.018309
-  northCorrection: -0
-  fileUnit: 0
-  sketchUpImportData:
-    defaultCamera:
-      position: {x: -826.8537, y: 709.0061, z: 711.1465}
-      lookAt: {x: -375.54025, y: 333.72266, z: 284.4928}
-      up: {x: 0.3758213, y: 0.85587966, z: -0.35528648}
-      fov: 35
-      aspectRatio: 0
-      orthoSize: 1
-      isPerspective: 1
-    scenes: []
+ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: uprt_cube
-    400000: //RootNode
-    400002: uprt_cube
-    2100000: _defaultMat
-    2100002: '[Color B08]'
-    2100004: '[Color F05]'
-    2100006: '[Color A04]'
-    2100008: '[Color M08]'
-    2100010: '[Color I05]'
-    2300000: //RootNode
-    2300002: uprt_cube
-    3300000: //RootNode
-    3300002: uprt_cube
-    4300000: Mesh AutoSave_housemod3_BACKUP_17116
-    4300002: Mesh uprt_cube
+    100000: antena1
+    100002: Kede1
+    100004: //RootNode
+    100006: key1_1
+    100008: Koja1
+    100010: Mesh1
+    100012: Mesh2
+    100014: Mesh3
+    100016: Mesh4
+    100018: Mesh5
+    100020: Mesh6
+    100022: Mesh7
+    100024: Mesh8
+    100026: Mesh9
+    100028: Radija1
+    100030: spinta1
+    100032: Stacy1
+    100034: Televizorius1
+    400000: antena1
+    400002: Kede1
+    400004: //RootNode
+    400006: key1_1
+    400008: Koja1
+    400010: Mesh1
+    400012: Mesh2
+    400014: Mesh3
+    400016: Mesh4
+    400018: Mesh5
+    400020: Mesh6
+    400022: Mesh7
+    400024: Mesh8
+    400026: Mesh9
+    400028: Radija1
+    400030: spinta1
+    400032: Stacy1
+    400034: Televizorius1
+    2100000: Stacy_Skin
+    2100002: Stacy_Shirt
+    2100004: Stacy_Shoe
+    2100006: Stacy_Shoe_Laces_Sole
+    2100008: Stacy_Hair
+    2100010: Stacy_Pants
+    2100012: FrontColor
+    2300000: Mesh1
+    2300002: Mesh2
+    2300004: Mesh3
+    2300006: Mesh4
+    2300008: Mesh5
+    2300010: Mesh6
+    2300012: Mesh7
+    2300014: Mesh8
+    2300016: Mesh9
+    3300000: Mesh1
+    3300002: Mesh2
+    3300004: Mesh3
+    3300006: Mesh4
+    3300008: Mesh5
+    3300010: Mesh6
+    3300012: Mesh7
+    3300014: Mesh8
+    3300016: Mesh9
+    4300000: Mesh1
+    4300002: Mesh2
+    4300004: Mesh3
+    4300006: Mesh4
+    4300008: Mesh5
+    4300010: Mesh6
+    4300012: Mesh7
+    4300014: Mesh8
+    4300016: Mesh9
   externalObjects: {}
   materials:
     importMaterials: 1
-    materialName: 2
-    materialSearch: 0
+    materialName: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -71,7 +105,7 @@ SketchUpImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.0254
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -96,7 +130,7 @@ SketchUpImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
