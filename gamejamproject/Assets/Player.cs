@@ -11,11 +11,21 @@ public class Player : UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstP
         return objectivesMap.ContainsKey(key) && objectivesMap[key] > 0;
     }
 
-    public bool requestObjectiveInstance(string key)
+    public int getNumberObjectiveInstances(string key)
     {
         if (hasObjectiveDone(key))
         {
-            objectivesMap[key] -= 1;
+            return objectivesMap[key];
+        }
+        else
+            return 0;
+    }
+
+    public bool requestObjectiveInstances(string key, int numberRequested = 1)
+    {
+        if (hasObjectiveDone(key) && objectivesMap[key] >= numberRequested)
+        {
+            objectivesMap[key] -= numberRequested;
             return true;
         }
         return false;
