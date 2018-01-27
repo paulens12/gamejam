@@ -13,7 +13,25 @@ public class Player : UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstP
     {
     objectivesMap = new Dictionary<string, int>(); 
     }
-    
+
+    public void RotateAssociatedPortals() //this should be just an update override
+    {
+        Vector3 directionToPortal;
+        
+        foreach (Transform child in PortalCollectionObject.transform)
+        {
+        
+            SeeThroughPortal portal = child.GetComponent<SeeThroughPortal>();
+            if (portal != null)
+            {
+                
+                directionToPortal = child.position - transform.position;
+                portal.OrientToDirection(directionToPortal);
+            }
+            
+        }
+    }
+
     public bool hasObjectiveDone(string key)
     {
         return objectivesMap.ContainsKey(key) && objectivesMap[key] > 0;

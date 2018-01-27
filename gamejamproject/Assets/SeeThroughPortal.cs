@@ -13,7 +13,7 @@ public class SeeThroughPortal : StepThroughPortal
     // Use this for initialization
     void Start()
     {
-        GameObject childCameraObject = new GameObject();
+        GameObject childCameraObject = new GameObject(targetPortal.name + "Camera");
         childCameraObject.transform.parent = targetPortal.transform;
         Camera newCamera2 = childCameraObject.AddComponent<Camera>();
         childCameraObject.transform.position = new Vector3(0, 0, 0);
@@ -33,6 +33,16 @@ public class SeeThroughPortal : StepThroughPortal
     // Update is called once per frame
     void Update()
     {
+        
+    }
 
+    public void OrientToDirection(Vector3 direction)
+    {
+        Camera camToOrient = targetPortal.GetComponentInChildren<Camera>();
+        targetPortal.transform.LookAt(targetPortal.transform.position + direction);
+        targetPortal.transform.Rotate(0, 0, 90);
+        transform.LookAt(transform.position + direction);
+        transform.Rotate(0, 90, 90);
+        //camToOrient.transform.localRotation = localRot;
     }
 }
