@@ -2,9 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(CapsuleCollider))]
 public class Player : UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController
 {
-    Dictionary<string, int> objectivesMap;
+    private Dictionary<string, int> objectivesMap;
+    public GameObject PortalCollectionObject;
+
+    public Player()
+    {
+    objectivesMap = new Dictionary<string, int>(); 
+    }
     
     public bool hasObjectiveDone(string key)
     {

@@ -22,10 +22,15 @@ public class AnimateMyPlatform : MonoBehaviour {
     // Use this for initialization
     void Start () {
         duplicates = new GameObject[numberOfPlatforms+1];
+    }
+    private void OnEnable()
+    {
         StartCoroutine(Deploy(numberOfPlatforms));
     }
-	
-	// Update is called once per frame
+    private void OnDisable()
+    {
+        i = 0;
+    }
 	void Update () {
 	    	
 	}
@@ -49,6 +54,7 @@ public class AnimateMyPlatform : MonoBehaviour {
             if (decay) StartCoroutine("Destroy", newCube);
             yield return new WaitForSeconds(cycleSpeed);
         }
+        new WaitForSeconds(decaySpeed);
         CancelInvoke("Deploy");
     }
     IEnumerator Destroy(GameObject cubeObject)
@@ -62,7 +68,6 @@ public class AnimateMyPlatform : MonoBehaviour {
         }
         DestroyImmediate(cubeObject);
 
-        CancelInvoke("Deploy");
-
+        CancelInvoke("Destroy");
     }
 }
