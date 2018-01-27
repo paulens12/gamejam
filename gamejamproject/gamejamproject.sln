@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gamejamproject.Plugins", "gamejamproject.Plugins.csproj", "{2F388F60-9D6C-5D27-CE0B-EE2DCF63071F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gamejamproject", "gamejamproject.csproj", "{A3BFB47A-CE55-6FAE-83FC-4F43AF064185}"
