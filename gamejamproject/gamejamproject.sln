@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gamejamproject.Plugins", "gamejamproject.Plugins.csproj", "{2F388F60-9D6C-5D27-CE0B-EE2DCF63071F}"
-EndProject
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gamejamproject", "gamejamproject.csproj", "{A3BFB47A-CE55-6FAE-83FC-4F43AF064185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gamejamproject.Plugins", "gamejamproject.Plugins.csproj", "{2F388F60-9D6C-5D27-CE0B-EE2DCF63071F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gamejamproject.Editor.Plugins", "gamejamproject.Editor.Plugins.csproj", "{F7CE17A2-A2BE-6DF8-3C5A-83B9A6F92E49}"
 EndProject
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2F388F60-9D6C-5D27-CE0B-EE2DCF63071F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F388F60-9D6C-5D27-CE0B-EE2DCF63071F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F388F60-9D6C-5D27-CE0B-EE2DCF63071F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F388F60-9D6C-5D27-CE0B-EE2DCF63071F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A3BFB47A-CE55-6FAE-83FC-4F43AF064185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A3BFB47A-CE55-6FAE-83FC-4F43AF064185}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3BFB47A-CE55-6FAE-83FC-4F43AF064185}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3BFB47A-CE55-6FAE-83FC-4F43AF064185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F388F60-9D6C-5D27-CE0B-EE2DCF63071F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F388F60-9D6C-5D27-CE0B-EE2DCF63071F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F388F60-9D6C-5D27-CE0B-EE2DCF63071F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F388F60-9D6C-5D27-CE0B-EE2DCF63071F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F7CE17A2-A2BE-6DF8-3C5A-83B9A6F92E49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F7CE17A2-A2BE-6DF8-3C5A-83B9A6F92E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7CE17A2-A2BE-6DF8-3C5A-83B9A6F92E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
