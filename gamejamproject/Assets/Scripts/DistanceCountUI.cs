@@ -8,6 +8,7 @@ public class DistanceCountUI : MonoBehaviour
     public GameObject first;
     public GameObject second;
     public Text text;
+    public GameObject progressBar;
     // Use this for initialization
     void Start()
     {
@@ -27,7 +28,9 @@ public class DistanceCountUI : MonoBehaviour
         {
             float dist = Vector3.Distance(first.transform.position, second.transform.position);
             text.text = "Distance till object:" + dist;
-            yield return new WaitForSeconds(0.1f);
+            GraphicalDistance progress = progressBar.GetComponent<GraphicalDistance>();
+            progress.setPercentage(progress.getPercentage(dist));
+            yield return new WaitForSeconds(0.05f);
         }
     }
 }
