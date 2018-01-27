@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class RotateStepThroughPortal : StepThroughPortal
 {
+    public float rotationAngle;
+    public GameObject objectToRotate;
 
     protected override void _DoPortalAction(Collider player)
     {
         Vector3 xVec = new Vector3(1, 0, 0);
-        transform.parent.RotateAround(player.transform.position, xVec, 90);
+        objectToRotate.transform.RotateAround(player.transform.position, xVec, rotationAngle);
         player.transform.position = targetPortal.transform.position + player.transform.forward * 1;
 
     }
