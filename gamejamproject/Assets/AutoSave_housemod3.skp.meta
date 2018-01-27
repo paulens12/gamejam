@@ -8,16 +8,16 @@ SketchUpImporter:
   selectedNodes: 00000000010000000400000005000000
   assetHash:
     serializedVersion: 2
-    Hash: fc035e911e2e52e4702fa254fea8866b
+    Hash: 440aa856523dfc04dd778dc362bc6b27
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
   fileUnit: 0
   sketchUpImportData:
     defaultCamera:
-      position: {x: -961.4801, y: 313.22552, z: -95.5449}
-      lookAt: {x: -259.53543, y: 40.22718, z: -92.91253}
-      up: {x: 0.3624644, y: 0.93199664, z: 0.0013592811}
+      position: {x: -155.58583, y: 177.70357, z: 247.63306}
+      lookAt: {x: 152.12875, y: -205.92744, z: -227.34297}
+      up: {x: 0.3050816, y: 0.8277483, z: -0.4709119}
       fov: 35
       aspectRatio: 0
       orthoSize: 1
@@ -33,6 +33,7 @@ SketchUpImporter:
     2100002: '[Color B08]'
     2100004: '[Color F05]'
     2100006: '[Color I05]'
+    2100008: '[Color A04]'
     2300000: //RootNode
     2300002: uprt_cube
     3300000: //RootNode
