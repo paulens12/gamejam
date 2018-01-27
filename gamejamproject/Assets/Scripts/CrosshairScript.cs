@@ -5,6 +5,8 @@ using UnityEngine;
 interface IButtonScript
 {
     void Activate();
+
+    void LookingAt();
 }
 
 public class CrosshairScript : MonoBehaviour {
@@ -32,6 +34,7 @@ public class CrosshairScript : MonoBehaviour {
             if (script != null)
             {
                 Debug.Log("looking at it!");
+                script.LookingAt();
                 if (Input.GetAxis("Fire1") > 0)
                 {
                     debounce = true;
