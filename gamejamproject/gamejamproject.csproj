@@ -240,6 +240,8 @@
     <Compile Include="Assets\Player.cs" />
     <Compile Include="Assets\RotateStepThroughPortal.cs" />
     <Compile Include="Assets\Scripts\AnimateMyPlatform.cs" />
+    <Compile Include="Assets\Scripts\ButtonTest.cs" />
+    <Compile Include="Assets\Scripts\CrosshairScript.cs" />
     <Compile Include="Assets\SimpleStepThroughPortal.cs" />
     <Compile Include="Assets\StepThroughPortal.cs" />
   </ItemGroup>
