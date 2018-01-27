@@ -1226,7 +1226,9 @@ MonoBehaviour:
   targetPortal: {fileID: 1907671579}
   m_strategy: {fileID: 114473064202576026, guid: 51b15e5b51d23f4439c1216b4b68f24f,
     type: 2}
-  key: Button1Pressed
+  m_key: Button1Pressed
+  m_numberRequired: 1
+  m_consumeKeys: 0
 --- !u!23 &1017100876
 MeshRenderer:
   m_ObjectHideFlags: 0
