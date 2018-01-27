@@ -19,9 +19,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             public float JumpForce = 30f;
             public AnimationCurve SlopeCurveModifier = new AnimationCurve(new Keyframe(-90.0f, 1.0f), new Keyframe(0.0f, 1.0f), new Keyframe(90.0f, 0.0f));
             [HideInInspector] public float CurrentTargetSpeed = 8f;
+            public KeyCode CrouchKey = KeyCode.LeftControl;
+            public float CrouchMultiplier = 0.7f;
 
 #if !MOBILE_INPUT
             private bool m_Running;
+            private bool m_Crouching;
 #endif
 
             public void UpdateDesiredTargetSpeed(Vector2 input)
@@ -117,12 +120,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
         }
 
+        private Vector3 m_normalScale;
+        private Vector3 m_crouchScale;
 
         private void Start()
         {
             m_RigidBody = GetComponent<Rigidbody>();
             m_Capsule = GetComponent<CapsuleCollider>();
             mouseLook.Init (transform, cam.transform);
+            m_normalScale = transform.localScale;
+            m_crouchScale =  new Vector3(m_normalScale.x, movementSettings.CrouchMultiplier * m_normalScale.y, m_normalScale.z);
         }
 
 
@@ -184,6 +191,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 }
             }
             m_Jump = false;
+#if !MOBILE_INPUT
+            if (Input.GetKey(movementSettings.CrouchKey))
+                transform.localScale = m_crouchScale;
+            else
+                transform.localScale = m_normalScale;
+#endif
         }
 
 
