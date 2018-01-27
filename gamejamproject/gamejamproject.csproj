@@ -288,6 +288,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\RotationTransformationStrategy.cs" />
     <Compile Include="Assets\Scripts\AnimateMyPlatform.cs" />
     <Compile Include="Assets\Scripts\ButtonTest.cs" />
     <Compile Include="Assets\Scripts\CrosshairScript.cs" />
@@ -299,6 +300,7 @@
     <Compile Include="Assets\Scripts\SimpleStepThroughPortal.cs" />
     <Compile Include="Assets\Scripts\StepThroughPortal.cs" />
     <Compile Include="Assets\SeeThroughPortal.cs" />
+    <Compile Include="Assets\TransformationStrategy.cs" />
     <Compile Include="Assets\workaroundForTheShitRigidbodyFirstPersonController.cs" />
   </ItemGroup>
   <ItemGroup>

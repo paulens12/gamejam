@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8aaa6d4678b53b4bb2ac84f629bdc07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPortal: {fileID: 1570583371}
+  targetPortal: {fileID: 0}
   rotationAngle: -90
   objectToRotate: {fileID: 1939356978}
 --- !u!23 &53084133
@@ -523,7 +523,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb3e662e2bfae244a9484a1d725db530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPortal: {fileID: 1570583371}
+  targetPortal: {fileID: 0}
+  m_strategy: {fileID: 0}
 --- !u!23 &254284295
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1037,6 +1038,57 @@ Transform:
   m_Father: {fileID: 1939356979}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &809441656
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4220930035989004, guid: 8831fb6d8fed83341ab5691371f70dcf, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 57.081
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220930035989004, guid: 8831fb6d8fed83341ab5691371f70dcf, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.6559997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220930035989004, guid: 8831fb6d8fed83341ab5691371f70dcf, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 18.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220930035989004, guid: 8831fb6d8fed83341ab5691371f70dcf, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220930035989004, guid: 8831fb6d8fed83341ab5691371f70dcf, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220930035989004, guid: 8831fb6d8fed83341ab5691371f70dcf, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220930035989004, guid: 8831fb6d8fed83341ab5691371f70dcf, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220930035989004, guid: 8831fb6d8fed83341ab5691371f70dcf, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114321457529576828, guid: 8831fb6d8fed83341ab5691371f70dcf,
+        type: 2}
+      propertyPath: m_objectToRotate
+      value: 
+      objectReference: {fileID: 1939356978}
+    - target: {fileID: 1335584262881068, guid: 8831fb6d8fed83341ab5691371f70dcf, type: 2}
+      propertyPath: m_Name
+      value: 180YRotationTransformationStrategy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8831fb6d8fed83341ab5691371f70dcf, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &829619310
 Prefab:
   m_ObjectHideFlags: 0
@@ -1576,7 +1628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88ac10d463defc541b0b7ca885e1a60d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPortal: {fileID: 1990085377}
+  targetPortal: {fileID: 0}
 --- !u!23 &1042676086
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2011,7 +2063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8aaa6d4678b53b4bb2ac84f629bdc07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPortal: {fileID: 53084131}
+  targetPortal: {fileID: 0}
   rotationAngle: 90
   objectToRotate: {fileID: 1939356978}
 --- !u!23 &1570583373
@@ -2786,7 +2838,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb3e662e2bfae244a9484a1d725db530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPortal: {fileID: 254284292}
+  targetPortal: {fileID: 0}
+  m_strategy: {fileID: 0}
 --- !u!1 &1939356978 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: e0da7106cfc1dfc45954599a8de21305, type: 3}

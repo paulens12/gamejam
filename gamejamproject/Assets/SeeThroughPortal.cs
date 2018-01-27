@@ -2,28 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public abstract class TransformationStrategy
-{
-    private StepThroughPortal m_targetPortal;
-
-    public TransformationStrategy(StepThroughPortal targetPortal)
-    {
-        m_targetPortal = targetPortal;
-    }
-
-    public abstract void DoTransform(Player player);
-
-}
-
-
-
 public class SeeThroughPortal : StepThroughPortal
 {
+    public TransformationStrategy m_strategy;
 
     protected override void _DoPortalAction(Collider player)
     {
-        player.transform.position = targetPortal.transform.position + player.transform.forward * 1;
+        m_strategy.DoTransform(player.transform.GetComponent<Player>(), targetPortal);
+        //player.transform.position = targetPortal.transform.position + player.transform.forward * 1;
     }
 
     // Use this for initialization

@@ -12,7 +12,6 @@ public class RotateStepThroughPortal : StepThroughPortal
         Vector3 xVec = new Vector3(1, 0, 0);
         objectToRotate.transform.RotateAround(player.transform.position, xVec, rotationAngle);
         player.transform.position = targetPortal.transform.position + player.transform.forward * 1;
-
     }
 
     // Use this for initialization
