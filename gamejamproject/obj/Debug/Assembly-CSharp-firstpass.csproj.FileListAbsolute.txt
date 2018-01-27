@@ -1,0 +1,2 @@
+C:\Users\Paulius\Documents\gamejam2018\gamejamproject\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\Paulius\Documents\gamejam2018\gamejamproject\obj\Debug\Assembly-CSharp-firstpass.csproj.CoreCompileInputs.cache
