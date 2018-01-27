@@ -199,12 +199,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingCube: {fileID: 1518673753646150}
-  numberOfPlatforms: 20
+  numberOfPlatforms: 26
   typeToDuplicate: {fileID: 1691794298362148, guid: 6e9f200814429ff43ae9cd12f063a856,
     type: 2}
-  cycleSpeed: 0.24
+  cycleSpeed: 0.18
   gap: 0.55
+  ladder: 0.09
   decay: 1
-  decayTime: 1.5
+  decayTime: 2.01
   decaySmooth: 0.04
   decaySpeed: 0.1
