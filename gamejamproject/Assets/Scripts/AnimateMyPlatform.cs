@@ -10,6 +10,7 @@ public class AnimateMyPlatform : MonoBehaviour {
     public GameObject typeToDuplicate;
     public float cycleSpeed;
     public float gap;
+    public float ladder;
     public bool decay;
     public float decayTime;
     public float decaySmooth;
@@ -42,7 +43,7 @@ public class AnimateMyPlatform : MonoBehaviour {
                 startingCube.transform.position,
                 startingCube.transform.rotation);
             newCube.transform.parent = startingCube.transform.parent;
-            newCube.transform.Translate(new Vector3(0, 0, gap * i));
+            newCube.transform.Translate(new Vector3(0, ladder * i, gap * i));
             newCube.transform.localScale = startingCube.transform.localScale;
             duplicates[i] = newCube;
             if (decay) StartCoroutine("Destroy", newCube);
