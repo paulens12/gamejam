@@ -11,7 +11,8 @@ interface IButtonScript
 
 public class CrosshairScript : MonoBehaviour {
 
-    public float MaxDistance;
+    public float MaxGlowDistance;
+    public float MaxActivateDistance;
 
     private bool debounce = false;
 
@@ -28,14 +29,14 @@ public class CrosshairScript : MonoBehaviour {
             return;
         Ray ray = new Ray(transform.position, transform.TransformDirection(Vector3.forward));
         RaycastHit hit;
-        if(Physics.Raycast(ray, out hit, MaxDistance))
+        if(Physics.Raycast(ray, out hit, MaxGlowDistance))
         {
             var script = hit.transform.GetComponent<IButtonScript>();
             if (script != null)
             {
                 Debug.Log("looking at it!");
                 script.LookingAt();
-                if (Input.GetAxis("Fire1") > 0)
+                if (Input.GetAxis("Fire1") > 0 && hit.distance < MaxActivateDistance)
                 {
                     debounce = true;
                     script.Activate();
