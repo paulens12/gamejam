@@ -14,7 +14,7 @@ public class SeeThroughPortal : StepThroughPortal
     // Use this for initialization
     void Start()
     {
-        GameObject childCameraObject = new GameObject(targetPortal.name + "Camera");
+        GameObject childCameraObject = new GameObject(name + "to" + targetPortal.name + "Camera");
         childCameraObject.transform.parent = targetPortal.transform;
         Camera newCamera2 = childCameraObject.AddComponent<Camera>();
         childCameraObject.transform.position = new Vector3(0, 0, 0);
