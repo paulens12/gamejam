@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class StepThroughPortal : MonoBehaviour {
 
-    public StepThroughPortal targetPortal;
+    public GameObject targetPortal;
 
     protected abstract void _DoPortalAction(Collider player);
 

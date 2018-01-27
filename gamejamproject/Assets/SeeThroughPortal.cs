@@ -8,8 +8,7 @@ public class SeeThroughPortal : StepThroughPortal
 
     protected override void _DoPortalAction(Collider player)
     {
-        m_strategy.DoTransform(player.transform.GetComponent<Player>(), targetPortal);
-        //player.transform.position = targetPortal.transform.position + player.transform.forward * 1;
+        m_strategy.DoTransform(player.transform.GetComponent<Player>(), targetPortal.GetComponent<StepThroughPortal>());
     }
 
     // Use this for initialization
