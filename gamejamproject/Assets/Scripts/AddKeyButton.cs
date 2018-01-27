@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonTest : MonoBehaviour, IButtonScript {
+public class AddKeyButton : MonoBehaviour, IButtonScript {
     public float HaloDelay;
     private float lastLookedAt;
     private bool deactivated = true;
-    public Behaviour Button;
+    public Behaviour Glow;
+    public string AchievementKey;
+    public GameObject Player;
 
 	public void Activate()
     {
         Debug.Log("ouch!");
+        Player.GetComponent<Player>().addObjectiveInstance(AchievementKey);
         transform.Rotate(30, 0, 0);
         Invoke("RotateBack", 0.5f);
     }
@@ -24,7 +27,7 @@ public class ButtonTest : MonoBehaviour, IButtonScript {
     {
         lastLookedAt = Time.time;
         deactivated = false;
-        Button.enabled = true;
+        Glow.enabled = true;
     }
 
     public void Update()
@@ -32,7 +35,7 @@ public class ButtonTest : MonoBehaviour, IButtonScript {
         if(!deactivated && Time.time - HaloDelay > lastLookedAt)
         {
             deactivated = true;
-            Button.enabled = false;
+            Glow.enabled = false;
             Debug.Log("not looking");
         }
     }
