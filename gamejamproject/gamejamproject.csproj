@@ -300,6 +300,7 @@
     <Compile Include="Assets\Scripts\SimpleStepThroughPortal.cs" />
     <Compile Include="Assets\Scripts\StepThroughPortal.cs" />
     <Compile Include="Assets\SeeThroughPortal.cs" />
+    <Compile Include="Assets\SimpleTransformationStrategy.cs" />
     <Compile Include="Assets\TransformationStrategy.cs" />
     <Compile Include="Assets\workaroundForTheShitRigidbodyFirstPersonController.cs" />
   </ItemGroup>
