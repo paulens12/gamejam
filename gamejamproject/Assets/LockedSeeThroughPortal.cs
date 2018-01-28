@@ -21,7 +21,7 @@ public class LockedSeeThroughPortal : SeeThroughPortal {
             else
                 {
                 Transform obj = transform.Find("PortalText");
-                if (obj.gameObject != null)
+                if (obj != null && obj.gameObject != null)
                     Destroy(obj.gameObject);
                 }
             base._DoPortalAction(playerColider);
