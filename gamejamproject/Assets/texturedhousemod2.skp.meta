@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: 6795da95286413b4c8ff64e29dc5f4f2
+timeCreated: 1517136391
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 0000000001000000
+  assetHash:
+    serializedVersion: 2
+    Hash: d7589bb73c5813cd7038622e053b8779
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 13.8806305, y: 58.72473, z: -1.2437901}
+      lookAt: {x: -42.963448, y: -6.293658, z: -97.159485}
+      up: {x: -0.2568324, y: 0.863847, z: -0.4333654}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2100000: _defaultMat
+    2100002: '[Pavers Stone Walk]'
+    2100004: '[Cinder Block]'
+    2100006: '[Brick Antique 01]'
+    2100008: '[Carpet Diamond Olive]'
+    2100010: '[Groundcover Brick Crushed]'
+    2100012: '[Metal Embossed]'
+    2100014: '[Translucent Glass Corrugated]'
+    2100016: '[Roofing Shingles GAF Estates]'
+    2100018: '[Upholstery Striped Multi-Colored]'
+    2100020: '[Carpet Diamond Yellow]'
+    2100022: '[Wood Floor Parquet]'
+    2100024: '[Grass Dark Green]'
+    2100026: '[Brick Rough Dark]'
+    2100028: '[Tile Various Tan]'
+    2100030: '[Cladding Weathered]'
+    2100032: '[Groundcover Brick Crushed]1'
+    2100034: _2
+    2100036: '[Concrete Aggregate Smoke]'
+    2100038: '[Groundcover Gravel 1 inch]'
+    2100040: '[Carpet Pattern Leaf Squares Tan]'
+    2100042: '[Metal Rusted]'
+    2100044: '[Concrete Scored Jointless]'
+    2100046: '[Water Sparkling]'
+    2100048: '[Carpet Plush Forest]'
+    2100050: '[Roofing Scalloped Ornate]'
+    2100052: '[Tile Limestone Multi]'
+    2100054: '[Wood Fence with Lattice]'
+    2100056: '[Groundcover Bark Chips]1'
+    2100058: '[Formica Beige]'
+    2100060: '[Stone Coursed Rough]'
+    2100062: '[Roofing Metal Standing Seam Red]'
+    2100064: '[Basketweave]'
+    2100066: '[Blacktop New]'
+    2100068: '[Tile Hexagon White]'
+    2100070: '[Wood Bamboo]'
+    2100072: '[Vegetation Honey Locust]'
+    2100074: '[Concrete Form 4x8]'
+    2100076: '[Cladding Siding Tan]'
+    2100078: '[Wallpaper Dog Bone]'
+    2100080: '[Stone Brushed Khaki]'
+    2100082: '[Water Dark Blue]'
+    2100084: '[Brick Rough Tan]'
+    2100086: '[Rough Square Concrete Block]'
+    2100088: '[Brick Colored Blue]'
+    2100090: '[Brick Tumbled]'
+    2100092: '[Metal Corrugated Shiny]'
+    2100094: '[Pavers Flagstone Gray]'
+    2100096: '[Granite Dark Gray]'
+    2100098: '[Vegetation Blur 02]'
+    2100100: '[Josh_Boots]'
+    2100102: '[Carrera Marble]'
+    2100104: '[Groundcover Bark Chips]'
+    2100106: '[Concrete Block Retaining Gray]'
+    2100108: '[Wood Floor Light]'
+    2100110: '[Beadboard]'
+    2100112: '[Metal Seamed]'
+    2100114: '[Stone Coursed Rough]1'
+    2100116: '[Brick Rough Tan]1'
+    2100118: _1
+    2100120: '[Stone Flagstone Ashlar]1'
+    2100122: '[Carpet Berber Multi]'
+    2100124: '[Marble Carrara Floor Tile]'
+    2100126: '[Concrete Block Layers]'
+    2100128: '[Vegetation Blur 03]'
+    2100130: '[Leather Red Brown]'
+    2100132: '[Pavers Driveway Brick]'
+    2100134: '[Stone Masonry Multi]'
+    2100136: '[Tile Travertine 2 inch]'
+    2100138: '[Marble Carrara Gold Floor Tile]'
+    2100140: '[Tile Border Travertine]'
+    2100142: '[Tile Mosaic Multi]'
+    2100144: '[Sandstone]'
+    2100146: '[Water Deep]'
+    2100148: '[Textile Leaves Green]'
+    2100150: '[Fencing Wood Old]'
+    2100152: '[Stone Flagstone Ashlar]'
+    2100154: '[Translucent Glass Block Dark]'
+    2100156: '[Concrete Pavers Block Multi]'
+    2100158: '[Polished Concrete New]'
+    2100160: '[Mosaic Hexagonal Tile]'
+    2100162: '[Metal Steel Textured]'
+    2100164: '[Vegetation Bark Maple]'
+    2100166: '[Granite Brown]'
+    2100168: '[Pavers Stone Walk]1'
+    2100170: '[Roofing Shingles Variable]'
+    2100172: '[Wood Veneer 01]'
+    2100174: '[Pavers with Grass Brick]'
+    2100176: '[Groundcover Gravel 1 inch]1'
+    2100178: '[Wood Floor]'
+    2100180: '[Fencing Wood Old]1'
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Mesh texturedhousemod2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
