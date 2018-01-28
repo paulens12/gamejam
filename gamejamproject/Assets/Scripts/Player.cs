@@ -28,11 +28,10 @@ public class Player : UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstP
         foreach (Transform child in PortalCollectionObject.transform)
         {
         
-            SeeThroughPortal portal = child.GetComponent<SeeThroughPortal>();
+            SeeThroughPortal portal = child.GetComponentInChildren<SeeThroughPortal>();
             if (portal != null)
             {
-                
-                directionToPortal = child.position - transform.position;
+                directionToPortal = child.position - GetComponentInChildren<Camera>().transform.position;
                 portal.OrientToDirection(directionToPortal);
             }
             

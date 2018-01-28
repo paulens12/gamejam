@@ -39,9 +39,12 @@ public class SeeThroughPortal : StepThroughPortal
 
     public void OrientToDirection(Vector3 direction)
     {
-        Camera camToOrient = targetPortal.GetComponentInChildren<Camera>();
-        camToOrient.transform.LookAt(targetPortal.transform.position + direction);
-        camToOrient.transform.Rotate(0, 0, 90);
+        if (targetPortal != null)
+        {
+            Camera camToOrient = targetPortal.GetComponentInChildren<Camera>();
+            camToOrient.transform.LookAt(targetPortal.transform.position + direction);
+            camToOrient.transform.Rotate(0, 0, 90);
+        }
         transform.LookAt(transform.position + direction);
         transform.Rotate(0, 90, 90);
         //camToOrient.transform.localRotation = localRot;
