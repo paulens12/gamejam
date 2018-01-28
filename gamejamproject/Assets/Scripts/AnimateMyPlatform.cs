@@ -16,7 +16,6 @@ public class AnimateMyPlatform : MonoBehaviour {
     public float decaySmooth;
     public float decaySpeed;
     private GameObject[] duplicates;
-    private float distance = 0.5f;
     private int i = 0;
 
     // Use this for initialization
