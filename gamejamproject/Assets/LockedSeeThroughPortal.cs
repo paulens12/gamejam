@@ -18,6 +18,12 @@ public class LockedSeeThroughPortal : SeeThroughPortal {
         {
             if (m_consumeKeys)
                 player.requestObjectiveInstances(m_key);
+            else
+                {
+                Transform obj = transform.Find("PortalText");
+                if (obj.gameObject != null)
+                    Destroy(obj.gameObject);
+                }
             base._DoPortalAction(playerColider);
         }
     }
