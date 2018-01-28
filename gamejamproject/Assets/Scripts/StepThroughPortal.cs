@@ -25,4 +25,11 @@ public abstract class StepThroughPortal : MonoBehaviour {
         _DoPortalAction(other);
         }
     }
+
+    public virtual void OrientToDirection(Vector3 direction)
+    {
+        transform.LookAt(transform.position + direction);
+        transform.Rotate(0, 90, 90);
+        //camToOrient.transform.localRotation = localRot;
+    }
 }

@@ -37,7 +37,7 @@ public class SeeThroughPortal : StepThroughPortal
         
     }
 
-    public void OrientToDirection(Vector3 direction)
+    public override void OrientToDirection(Vector3 direction)
     {
         if (targetPortal != null)
         {
@@ -45,8 +45,6 @@ public class SeeThroughPortal : StepThroughPortal
             camToOrient.transform.LookAt(targetPortal.transform.position + direction);
             camToOrient.transform.Rotate(0, 0, 90);
         }
-        transform.LookAt(transform.position + direction);
-        transform.Rotate(0, 90, 90);
-        //camToOrient.transform.localRotation = localRot;
+        base.OrientToDirection(direction);
     }
 }

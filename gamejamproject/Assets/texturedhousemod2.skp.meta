@@ -8,16 +8,16 @@ SketchUpImporter:
   selectedNodes: 0000000001000000
   assetHash:
     serializedVersion: 2
-    Hash: d7589bb73c5813cd7038622e053b8779
+    Hash: dea997ee97c2e7771eee43dcb137fa81
   longitude: -105.242139
   latitude: 40.018309
   northCorrection: -0
   fileUnit: 0
   sketchUpImportData:
     defaultCamera:
-      position: {x: 13.8806305, y: 58.72473, z: -1.2437901}
-      lookAt: {x: -42.963448, y: -6.293658, z: -97.159485}
-      up: {x: -0.2568324, y: 0.863847, z: -0.4333654}
+      position: {x: -896.87823, y: 962.0909, z: -774.6075}
+      lookAt: {x: -801.10535, y: 880.29095, z: -688.37177}
+      up: {x: 0.39823788, y: 0.8442904, z: 0.35858107}
       fov: 35
       aspectRatio: 0
       orthoSize: 1
@@ -118,6 +118,7 @@ SketchUpImporter:
     2100176: '[Groundcover Gravel 1 inch]1'
     2100178: '[Wood Floor]'
     2100180: '[Fencing Wood Old]1'
+    2100182: '[Groundcover Rock Crushed 2 inch]'
     2300000: //RootNode
     3300000: //RootNode
     4300000: Mesh texturedhousemod2
