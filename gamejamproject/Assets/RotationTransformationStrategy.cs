@@ -15,5 +15,6 @@ public class RotationTransformationStrategy : TransformationStrategy
     {
         GameObject.Find("texturedhousemod2").transform.Rotate(m_rotation.x, m_rotation.y, m_rotation.z);//.rotation *= m_rotation;// Rotate(player.transform.position, xVec, rotationAngle);
         player.transform.position = targetPortal.transform.position + player.transform.forward * 1;
+        player.GetComponentInChildren<Rigidbody>().velocity = new Vector3();
     }
 }
