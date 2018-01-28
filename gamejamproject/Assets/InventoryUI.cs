@@ -18,9 +18,9 @@ public class InventoryUI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        string textToOutput = @"Key X%d
-Axe X%d
-Artefact X%d
+        string textToOutput = @"Key X{0}
+Axe X{1}
+Artefact X{2}
 ";
         Player player = m_player.GetComponent<Player>();
         string output = string.Format(textToOutput, player.getNumberObjectiveInstances(Player.Objectives.KeyItem), 
