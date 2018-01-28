@@ -5,9 +5,7 @@ using UnityEngine;
 public class GrabFunction : MonoBehaviour {
 
     public string type;
-    public GameObject triggerBox;
-    public GameObject model;
-
+    public GameObject obj;
 
 
 
@@ -23,9 +21,17 @@ public class GrabFunction : MonoBehaviour {
 	}
 
 
-    void Grabbed()
-    {
-
+    void OnTriggerEnter(Collider other) {
+        if(other.name == "RigidBodyFPSController")
+        {
+            print("Grabbed Key");
+            other.GetComponent<Player>().addObjectiveInstance(type);
+            if(obj != null)
+            {
+                Destroy(obj);
+            }
+            Destroy(this.transform.gameObject);
+        }
     }
 
 
