@@ -1613,15 +1613,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: e0da7106cfc1dfc45954599a8de21305, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.01
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: e0da7106cfc1dfc45954599a8de21305, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.01
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: e0da7106cfc1dfc45954599a8de21305, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.01
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e0da7106cfc1dfc45954599a8de21305, type: 3}
